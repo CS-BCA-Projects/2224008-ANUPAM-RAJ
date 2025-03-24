@@ -41,8 +41,8 @@ const TestimonialSlider = () => {
 
     return (
         <div className="px-4">
-            <div className="px-6 md:px-16 lg:px-32 py-12 bg-yellow-50">
-                <h2 className="text-5xl font-bold text-center mb-8">What Our Buyers Say</h2>
+            <div className="px-6 md:px-16 lg:px-32 py-12 bg-yellow-100">
+                <h2 className="text-5xl font-bold text-center mb-8 text-black">What Our Buyers Say</h2>
                 <div className="relative max-w-4xl mx-auto">
 
                     {/* Left Button */}

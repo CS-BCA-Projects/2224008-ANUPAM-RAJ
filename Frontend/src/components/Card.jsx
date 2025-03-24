@@ -3,10 +3,10 @@ import { ShoppingCart, Heart } from 'lucide-react';
 
 function Card({ title, description, image, price, addToCart, addToFav }) {
     return (
-        <div className='transition ease-in-out delay-150 hover:scale-75'>
-            <div className="card bg-base-100 w-full sm:w-80 sm:h-[600px] shadow-xl flex flex-col ">
+        <div className='transition ease-in-out delay-75 hover:scale-75 shadow-2xl shadow-black'>
+            <div className="card bg-slate-300 w-full sm:w-80 sm:h-[600px] shadow-xl flex flex-col ">
                 <figure className=" w-full ">
-                    <img className="min-h-full min-w-full " src={image} alt={title} />
+                    <img className="min-h-full min-w-full  " src={image} alt={title} />
                 </figure>
                 <div className="card-body flex-grow flex flex-col justify-between">
                     <div>

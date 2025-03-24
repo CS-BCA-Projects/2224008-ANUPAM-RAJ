@@ -1,19 +1,19 @@
  export const myData = [
 
     {
-        title: "Dracula", description: "Classic vampire horror novel", image: "https://images.cdn1.buscalibre.com/fit-in/360x360/3d/d7/3dd7b2d52c5f679fab109869c834a5a1.jpg", price: 14, category: "horrorBooks" 
+        title: "Dracula", description: "Classic vampire horror novel", image: "https://imgcdn.saxo.com/_9781800601826", price: 14, category: "horrorBooks" 
     },
 
     {
-        title: "It", description: "Stephen King's terrifying masterpiece", image: "https://image.pmgstatic.com/cache/resized/w420/files/images/film/posters/159/526/159526209_d026be.jpg", price: 12, category: "horrorBooks"
+        title: "It", description: "Stephen King's terrifying masterpiece", image: "https://i5.walmartimages.com/asr/8f13a88f-93c4-446d-b92c-4ab5c9fa3478.a4b040b48c6ec163eb82bfa5ca5cb7e6.jpeg", price: 12, category: "horrorBooks"
     },
 
     {
-        title: "The Shining", description: "A horror classic by Stephen King", image: "https://images.cdn2.buscalibre.com/fit-in/360x360/34/09/3409b9ca145cec736d6ed6b26d10e32e.jpg", price: 15, category: "horrorBooks"
+        title: "The Shining", description: "A horror classic by Stephen King", image: "https://www.tallengestore.com/cdn/shop/products/TheShining-JackNicholson-StanleyKubrickClassicHorrorMovie-FanArt-HollywoodEnglishMoviePoster_65648c08-df57-4142-a14d-b803d139ae5b.jpg?v=1634645691", price: 15, category: "horrorBooks"
     },
 
     {
-        title: "Frankenstein", description: "The birth of horror fiction", image: "https://upload.wikimedia.org/wikipedia/commons/a/a7/Frankenstein%27s_monster_%28Boris_Karloff%29.jpg", price: 12, category: "horrorBooks"
+        title: "Frankenstein", description: "The birth of horror fiction", image: "https://monsterologist.com/cdn/shop/products/Frankenstein_s-Monster-black-white-2048px.jpg?v=1652552434&width=1445", price: 12, category: "horrorBooks"
     },
 
     {

@@ -17,7 +17,7 @@ function Navbar() {
 
     return (
         <div className='fixed top-0 left-0 right-0 z-10 '>
-            <div className=" bg-base-100 px-4 flex justify-between items-center">
+            <div className=" bg-white px-4 flex justify-between items-center">
                 <div className="">
                     <a className=" text-lg sm:text-2xl font-bold cursor-pointer">BookMart</a>
                 </div>
