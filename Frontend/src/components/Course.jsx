@@ -6,12 +6,21 @@ function Course({ addToCart, addToFav}) {
 
 
   return (
-    <div className='px-4 bg-gradient-to-b  from-gray-800 to-slate-200 '>
+    <div className='px-4   '>
       {/* Horror Section */}
-      <div className='flex flex-col mt-10 sm:p-20 p-10'>
-        <h1 className='text-5xl font-bold text-center mb-12 text-white'></h1>
+      <div className='flex flex-col mt-10 sm:p-20 p-10 '>
+        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Autobiography</h1>
         <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
-          {myData.filter(book => book.category === "horrorBooks").map((book, index) => (
+          {myData.filter(book => book.category === "Autobiography").map((book, index) => (
+           <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />
+          ))}
+        </div>
+      </div>
+
+      <div className='flex flex-col mt-10 sm:p-20 p-10 '>
+        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Spiritual</h1>
+        <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
+          {myData.filter(book => book.category === "Spiritual").map((book, index) => (
            <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />
           ))}
         </div>
@@ -19,7 +28,7 @@ function Course({ addToCart, addToFav}) {
 
       {/* Non-Fiction Section */}
       <div className='flex flex-col mt-10 sm:p-20 p-10 '>
-        <h1 className='text-5xl font-bold text-center mb-12 text-white'></h1>
+        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Non Fiction</h1>
         <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
           {myData.filter(book => book.category === "nonFictionBooks").map((book, index) => (
             <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />
@@ -29,7 +38,7 @@ function Course({ addToCart, addToFav}) {
 
       {/* Comics Section */}
       <div className='flex flex-col mt-10 sm:p-20 p-10 '>
-        <h1 className='text-5xl font-bold text-center mb-12'></h1>
+        <h1 className='text-5xl font-bold text-center mb-12'>Comics</h1>
         <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
           {myData.filter(book => book.category === "comicsBooks").map((book, index) => (
             <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />
@@ -39,7 +48,7 @@ function Course({ addToCart, addToFav}) {
 
       {/* Sci-Fi Section */}
       <div className='flex flex-col mt-10 sm:p-20 p-10 '>
-        <h1 className='text-5xl font-bold text-center mb-12'></h1>
+        <h1 className='text-5xl font-bold text-center mb-12'>Science Fiction</h1>
         <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
           {myData.filter(book => book.category === "sciFiBooks").map((book, index) => (
             <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />

@@ -36,7 +36,7 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
 
   }
   return (
-    <div className='flex flex-col min-h-screen' >
+    <div className='flex flex-col min-h-screen ' >
 
       {/* Cart Section */}
       {view === 'cart' && (

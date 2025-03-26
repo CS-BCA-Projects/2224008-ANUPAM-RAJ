@@ -1,20 +1,39 @@
  export const myData = [
 
     {
-        title: "Dracula", description: "Classic vampire horror novel", image: "https://imgcdn.saxo.com/_9781800601826", price: 14, category: "horrorBooks" 
+        title: "Bhagat Singh", description: "23rd March Shaheed", image: "https://cdn.penguin.co.in/wp-content/uploads/2022/07/9780670095230.jpg", price: 14, category: "Autobiography" 
     },
 
     {
-        title: "It", description: "Stephen King's terrifying masterpiece", image: "https://i5.walmartimages.com/asr/8f13a88f-93c4-446d-b92c-4ab5c9fa3478.a4b040b48c6ec163eb82bfa5ca5cb7e6.jpeg", price: 12, category: "horrorBooks"
+        title: "Bose", description: "Indian Freedom Struggle", image: "https://bargainbookhutonline.com/public/storage/products/7664/Zkfy68lvW7115zn9zBQIC6b6TXd3aSmE3mG1Qofi.jpeg", price: 12, category: "Autobiography"
     },
 
     {
-        title: "The Shining", description: "A horror classic by Stephen King", image: "https://www.tallengestore.com/cdn/shop/products/TheShining-JackNicholson-StanleyKubrickClassicHorrorMovie-FanArt-HollywoodEnglishMoviePoster_65648c08-df57-4142-a14d-b803d139ae5b.jpg?v=1634645691", price: 15, category: "horrorBooks"
+        title: "Dr.Br Ambedkar", description: "My Autobiography", image: "https://m.media-amazon.com/images/I/61VpJlVM1LL._AC_UF1000,1000_QL80_.jpg", price: 15, category: "Autobiography"
     },
 
     {
-        title: "Frankenstein", description: "The birth of horror fiction", image: "https://monsterologist.com/cdn/shop/products/Frankenstein_s-Monster-black-white-2048px.jpg?v=1652552434&width=1445", price: 12, category: "horrorBooks"
+        title: "Sarojini Naidu", description: "The Nightingle of India", image: "https://m.media-amazon.com/images/I/81ZVErJ7PHL._UF1000,1000_QL80_.jpg", price: 12, category: "Autobiography"
     },
+
+    {
+        title: "Gautam buddha", description: "The Dhamapada", image: "https://cdn-abgke.nitrocdn.com/wpXYPLBkAhtksgYTBaEZtWFzEJygzWlS/assets/images/optimized/rev-b6ab1da/liveanddare.com/wp-content/uploads/2019/01/The-Dhammapada.jpg", price: 12, category: "Spiritual"
+    },
+
+    {
+        title: "Swami Vivekananda", description: "My Values", image: "https://www.nbtindia.gov.in/writereaddata/booksimages/2743.jpg", price: 12, category: "Spiritual"
+    },
+
+    {
+        title: "Yugrishi", description: "Spirituality and Science", image: "https://cdn.exoticindia.com/images/products/original/books-2019/mzx535.jpg", price: 12, category: "Spiritual"
+    },
+
+
+
+    {
+        title: "Nataraj", description: "Connecting mind and soul", image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1591580777i/53893322.jpg", price: 12, category: "Spiritual"
+    },
+
 
     {
         title: "Sapiens", description: "A brief history of humankind", image: "https://miro.medium.com/v2/resize:fit:592/0*RArKNBFL91CwGeWU", price: 21, category: "nonFictionBooks" 

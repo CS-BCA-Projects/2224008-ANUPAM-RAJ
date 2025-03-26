@@ -15,7 +15,8 @@ function Card({ title, description, image, price, addToCart, addToFav }) {
                         <p>Price: $ {price}</p>
                     </div>
                     <div className="card-actions justify-end">
-                        <button onClick={() => addToFav({ title, price,image })} className="btn btn-primary ">
+                        <button onClick={() => addToFav({ title, price,image })
+                    }  className="btn btn-primary ">
                             <Heart  />
                         </button>
                         <button onClick={() => addToCart({ title, price,image })} className="btn btn-primary">
