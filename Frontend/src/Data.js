@@ -1,5 +1,7 @@
  export const myData = [
 
+    // Autobiography Section
+
     {
         title: "Bhagat Singh", description: "23rd March Shaheed", image: "https://cdn.penguin.co.in/wp-content/uploads/2022/07/9780670095230.jpg", price: 14, category: "Autobiography" 
     },
@@ -16,6 +18,8 @@
         title: "Sarojini Naidu", description: "The Nightingle of India", image: "https://m.media-amazon.com/images/I/81ZVErJ7PHL._UF1000,1000_QL80_.jpg", price: 12, category: "Autobiography"
     },
 
+        // Spiritual Section
+
     {
         title: "Gautam buddha", description: "The Dhamapada", image: "https://cdn-abgke.nitrocdn.com/wpXYPLBkAhtksgYTBaEZtWFzEJygzWlS/assets/images/optimized/rev-b6ab1da/liveanddare.com/wp-content/uploads/2019/01/The-Dhammapada.jpg", price: 12, category: "Spiritual"
     },
@@ -29,11 +33,28 @@
     },
 
 
-
     {
         title: "Nataraj", description: "Connecting mind and soul", image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1591580777i/53893322.jpg", price: 12, category: "Spiritual"
     },
 
+        // Religion section
+    
+    {
+        title: "Shakti", description: "The Nine Forms of the Goddess", image: "https://m.media-amazon.com/images/I/61ay++2ym8L._AC_UF1000,1000_QL80_.jpg", price: 12, category: "Religion"
+    },
+
+    {
+        title: "Bhagavad Gita", description: "Connecting mind and soul", image: "https://krishnastore.com/images/cache/Bagavath-gita-Rs--160-600x913.webps-600x913.webp", price: 12, category: "Religion"
+    },
+    {
+        title: "Ramcharitmanas", description: "Emphasizing devotion and righteousness", image: "https://m.media-amazon.com/images/I/91y46ttZCwL._AC_UF1000,1000_QL80_.jpg", price: 12, category: "Religion"
+    },
+    {
+        title: "Ardhanarishvara", description: "the lord whose half is a woman", image: "https://media.licdn.com/dms/image/v2/D4D12AQGh04BE8MMuCw/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1654507763217?e=2147483647&v=beta&t=WP54JmBID4QzseMbOeZUAholvylkrJE9GQQjNMA1u_k", price: 12, category: "Religion"
+    },
+
+
+        // nonFictionSection
 
     {
         title: "Sapiens", description: "A brief history of humankind", image: "https://miro.medium.com/v2/resize:fit:592/0*RArKNBFL91CwGeWU", price: 21, category: "nonFictionBooks" 
@@ -51,6 +72,8 @@
         title: "Becoming", description: "Michelle Obama's inspiring journey", image: "https://upload.wikimedia.org/wikipedia/en/0/09/Becoming_%28Michelle_Obama_book%29.jpg", price: 22, category: "nonFictionBooks" 
     },
 
+        // Comic Section
+
     {
         title: "Watchmen", description: "A legendary graphic novel", image: "https://m.media-amazon.com/images/I/61BvMZbTw9L._AC_UF1000,1000_QL80_.jpg", price: 38, category: "comicsBooks"
     },
@@ -66,6 +89,8 @@
     {
         title: "Maus", description: "A powerful Holocaust story in comic form", image: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1559518970i/45007892.jpg", price: 32, category: "comicsBooks"
     },
+
+        // Science Fiction Section
 
     {
         title: "Dune", description: "A sci-fi masterpiece by Frank Herbert", image: "https://trey-stone.com/wp-content/uploads/2019/05/11323604.jpg", price: 44, category: "sciFiBooks" 

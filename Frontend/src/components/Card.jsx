@@ -6,7 +6,7 @@ function Card({ title, description, image, price, addToCart, addToFav }) {
         <div className='transition ease-in-out delay-75 hover:scale-75 shadow-2xl shadow-black'>
             <div className="card bg-slate-300 w-full sm:w-80 sm:h-[600px] shadow-xl flex flex-col ">
                 <figure className=" w-full ">
-                    <img className="min-h-full min-w-full  " src={image} alt={title} />
+                    <img className="h-auto w-full object-cover  " src={image} alt={title} />
                 </figure>
                 <div className="card-body flex-grow flex flex-col justify-between">
                     <div>
