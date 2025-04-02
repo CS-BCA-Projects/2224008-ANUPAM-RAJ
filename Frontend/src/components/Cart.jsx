@@ -1,6 +1,8 @@
 import React from 'react';
+import Checkout from './Checkout'
 import { useState } from 'react';
 import { motion } from "framer-motion";
+
 
 function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +37,7 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
     }
 
   }
+
   return (
     <div className='flex flex-col min-h-screen ' >
 
@@ -46,7 +49,7 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
             <div className='flex justify-center pt-36'>
               <motion.p
                 className="sm:text-[200px] text-[100px]"
-                animate={{ x: ["-50%", "50%", "-50%"] }} 
+                animate={{ x: ["-50%", "50%", "-50%"] }}
                 transition={{ duration: 4, repeat: 15, ease: "easeInOut" }}
               >
                 🛒
@@ -64,14 +67,23 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
                   <button className='bg-red-500 text-white text-sm px-1 py-1 rounded-md hover:bg-red-600' onClick={() => removeFromCart(index)}>Remove</button>
                 </li>
               ))}
+
+              <div className='text-center'>
+
+                <div className='mt-24 mb-12 text-center text-xl font-bold'>
+                  Total: <span className='text-green-600'>${totalPrice}</span>
+                </div>
+
+
+                <div className="-mt-10 relative">
+                  <Checkout />
+                  <button onClick={handleBuyNow} className="absolute left-1/2 transform -translate-x-1/2 -mt-[85px] bg-green-500  text-white p-2  text-xl mb-20">
+                    place the order
+                  </button>
+                </div>
+              </div>
             </ul>
           )}
-          <div className='mt-24 mb-12 text-center text-xl font-bold'>
-            Total: <span className='text-green-600'>${totalPrice}</span>
-          </div>
-          <div className='text-center  '>
-            <button onClick={handleBuyNow} className='btn-primary p-2'>Buy Now</button>
-          </div>
         </div>
       )}
 
@@ -79,7 +91,7 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
         <dialog id="my_modal_5" className="modal bg-pink-200" open>
           <div className="modal-box p-20">
             <h3 className="font-bold text-2xl text-center">Your Order is Placed!</h3>
-            <p className="py-4 text-2xl text-center">Please keep the cash ready. Your items will be delivered within 5 days.</p>
+            <p className="py-4 text-2xl text-center">Your items will be delivered within 5 days.</p>
             <div className="modal-action justify-center">
               <button className="btn" onClick={() => setIsModalOpen(false)}>OK</button>
             </div>
@@ -95,7 +107,7 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
             <div className='flex justify-center pt-36'>
               <motion.p
                 className="sm:text-[200px] text-[100px]"
-                animate={{ scale: [1, 1.5, 1] }} 
+                animate={{ scale: [1, 1.5, 1] }}
                 transition={{ duration: 1, repeat: 15, ease: "easeInOut" }}
               >
                 ❤️
@@ -117,6 +129,7 @@ function Cart({ cart, removeFromCart, fav, removeFromFav, view }) {
           )}
         </div>
       )}
+
     </div>
   );
 }

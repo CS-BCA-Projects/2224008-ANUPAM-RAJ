@@ -3,7 +3,7 @@
     // Autobiography Section
 
     {
-        title: "Bhagat Singh", description: "23rd March Shaheed", image: "https://cdn.penguin.co.in/wp-content/uploads/2022/07/9780670095230.jpg", price: 14, category: "Autobiography" 
+        title: "Bhagat Singh", description: "23rd March Shaheed", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROANnfvmFNXJkUg-y9G7s3iEqsHX5HFMynULe_Vj_dJL65c7tpBUkUnJUhQP4FvwWL8Vo&usqp=CAU", price: 14, category: "Autobiography" 
     },
 
     {
@@ -11,7 +11,7 @@
     },
 
     {
-        title: "Dr.Br Ambedkar", description: "My Autobiography", image: "https://m.media-amazon.com/images/I/61VpJlVM1LL._AC_UF1000,1000_QL80_.jpg", price: 15, category: "Autobiography"
+        title: "Dr.Br Ambedkar", description: "My Autobiography", image: "https://rukminim2.flixcart.com/image/850/1000/xif0q/book/f/f/l/the-constitution-of-india-original-imah6a9uh5em29ya.jpeg?q=20&crop=false", price: 15, category: "Autobiography"
     },
 
     {

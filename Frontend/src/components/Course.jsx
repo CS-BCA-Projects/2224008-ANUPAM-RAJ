@@ -6,7 +6,16 @@ function Course({ addToCart, addToFav}) {
 
 
   return (
-    <div className='px-4   '>
+    <div className='px-4 '>
+        {/* Spiritual Section */}
+      <div className='flex flex-col mt-10 sm:p-20 p-10 '>
+        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Spiritual Books</h1>
+        <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
+          {myData.filter(book => book.category === "Spiritual").map((book, index) => (
+           <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />
+          ))}
+        </div>
+      </div>
       {/* Autobiography Section */}
       <div className='flex flex-col mt-10 sm:p-20 p-10 '>
         <h1 className='text-5xl font-bold text-center mb-12 text-black'>Autobiography</h1>
@@ -16,18 +25,9 @@ function Course({ addToCart, addToFav}) {
           ))}
         </div>
       </div>
-        {/* Spiritual Section */}
-      <div className='flex flex-col mt-10 sm:p-20 p-10 '>
-        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Spiritual</h1>
-        <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
-          {myData.filter(book => book.category === "Spiritual").map((book, index) => (
-           <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />
-          ))}
-        </div>
-      </div>
           {/*Religion Section */}
       <div className='flex flex-col mt-10 sm:p-20 p-10 '>
-        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Religion</h1>
+        <h1 className='text-5xl font-bold text-center mb-12 text-black'>Religious Books</h1>
         <div className='flex flex-col sm:flex-row sm:flex-wrap sm:justify-around gap-y-10'>
           {myData.filter(book => book.category === "Religion").map((book, index) => (
            <Card key={index} {...book} addToCart={addToCart} addToFav={addToFav} />

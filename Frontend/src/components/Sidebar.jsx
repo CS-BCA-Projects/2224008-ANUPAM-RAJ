@@ -27,6 +27,7 @@ function Sidebar({ activeTab, setActiveTab }) {
             Favorites ❤️
           </button>
         </li>
+        
       </ul>
     </div>
   );

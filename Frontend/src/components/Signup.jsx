@@ -8,6 +8,7 @@ function Signup() {
     const [password, setPassword] = useState('');
     const [address, setAddress] = useState('');
     const [gender, setGender] = useState('');
+    const [success,setSuccess] = useState(false)
     const navigate = useNavigate();
 
     const handleSubmit = (e) => {
@@ -15,7 +16,11 @@ function Signup() {
         axios.post("http://localhost:3000/Signup", { name, email, password, address, gender })
             .then(result => {
                 console.log(result);
-                navigate('/Login');
+                setSuccess(true); 
+                setTimeout(() => {
+                    navigate('/Login');
+                }, 3000);
+
             })
             .catch(err => console.log(err));
     };
@@ -24,11 +29,17 @@ function Signup() {
         <div className='flex justify-center items-center min-h-screen p-4 bg-gradient-to-r from-indigo-500'>
             <div className='bg-white p-6 sm:p-24 rounded-lg shadow-2xl shadow-black w-full max-w-lg sm:max-w-2xl  sm:hover:translate-x-20 transition duration-300 ease-in-out'>
                 <h2 className='text-center text-2xl sm:text-4xl font-bold mb-6'>Signup</h2>
-                
+
+                {success && (
+                    <div role="alert" className="alert alert-success text-green-700 border border-green-500 p-2 rounded-md my-2">
+                        <span>Signup successful! Redirecting to login...</span>
+                    </div>
+                )}
+
                 <form onSubmit={handleSubmit}>
                     <div className='mb-4'>
                         <label htmlFor="name" className='block text-lg font-medium'>Name</label>
-                        <input 
+                        <input
                             type="text"
                             placeholder='Enter Name'
                             autoComplete='off'
@@ -42,7 +53,7 @@ function Signup() {
 
                     <div className='mb-4'>
                         <label htmlFor="email" className='block text-lg font-medium'>Email</label>
-                        <input 
+                        <input
                             type="email"
                             placeholder='Enter Email'
                             autoComplete='off'
@@ -56,7 +67,7 @@ function Signup() {
 
                     <div className='mb-4'>
                         <label htmlFor="password" className='block text-lg font-medium'>Password</label>
-                        <input 
+                        <input
                             type="password"
                             placeholder='Enter Password'
                             name='password'
@@ -69,7 +80,7 @@ function Signup() {
 
                     <div className='mb-4'>
                         <label htmlFor="address" className='block text-lg font-medium'>Address</label>
-                        <input 
+                        <input
                             type="text"
                             placeholder='Enter Address'
                             name='address'
@@ -84,7 +95,7 @@ function Signup() {
                         <label className='block text-lg font-medium'>Gender</label>
                         <div className='flex gap-4 mt-1'>
                             <label className='text-sm'>
-                                <input 
+                                <input
                                     type="radio"
                                     name="gender"
                                     value="Male"
@@ -93,7 +104,7 @@ function Signup() {
                                 /> Male
                             </label>
                             <label className='text-sm'>
-                                <input 
+                                <input
                                     type="radio"
                                     name="gender"
                                     value="Female"
@@ -109,11 +120,12 @@ function Signup() {
                         className=' bg-gradient-to-r from-indigo-500 to-purple-100 
                        hover:from-purple-100 hover:to-indigo-500  text-black w-full p-2 rounded-md text-lg  '>
                         Register
+
                     </button>
                 </form>
 
                 <p className='text-center mt-3 text-lg'>
-                    Already have an account? <Link to={"/Login"} className='text-emerald-600 hover:underline'>Login</Link> 
+                    Already have an account? <Link to={"/Login"} className='text-emerald-600 hover:underline'>Login</Link>
                 </p>
             </div>
         </div>
