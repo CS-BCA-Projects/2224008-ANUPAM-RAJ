@@ -3,7 +3,7 @@ import React from "react";
 function Footer() {
   return (
     <div className="px-4">
-      <footer className="footer footer-center bg-gradient-to-t from-gray-800 to-slate-200    text-primary-content p-10 ">
+      <footer className="footer footer-center bg-gradient-to-t from-[#88BDF2]   text-primary-content p-10 ">
   <aside>
     
     <p className="font-bold text-xl text-black">

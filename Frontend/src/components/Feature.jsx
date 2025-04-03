@@ -22,9 +22,9 @@ function Feature() {
     }, [images.length]);
 
     return (
-        <div className='px-4 flex flex-col sm:flex-row'>
+        <div className='px-4 flex flex-col sm:flex-row mb-10 mt-10'>
             
-            <div className='flex sm:w-1/2 w-full sm:order-1 justify-center p-24'>
+            <div className='flex sm:w-1/2 w-full sm:order-1 justify-center p-24 bg-gradient-to-r from-[#ffd3ac] '>
                 <div className="overflow-hidden rounded-box min-w-60 sm:w-96 shadow-2xl shadow-black">
                     <div
                         className="flex transition-transform duration-75"
@@ -38,7 +38,7 @@ function Feature() {
             </div>
 
             
-            <div className='flex sm:w-1/2 w-full sm:order-2 flex-col p-5 md:p-10 justify-center gap-y-5 sm:gap-y-10'>
+            <div className='flex sm:w-1/2 w-full sm:order-2 flex-col p-5 md:p-10 justify-center gap-y-5 sm:gap-y-10 '>
                 <h1 className='text-4xl sm:text-6xl text-black font-bold text-center sm:text-justify'>
                     Your Favorite Books in <br /> one place
                 </h1>

@@ -11,9 +11,10 @@ function Banner() {
       <div
         className="hero min-h-screen sm:h-auto"
         style={{
-          backgroundImage: "url(https://w0.peakpx.com/wallpaper/316/433/HD-wallpaper-books-library-shelves-lighting.jpg)", backgroundRepeat: "no-repeat"
+          backgroundImage: "url(https://www.icra.in/Content/assets/images/bg-rating-entity-specific.jpg)", backgroundRepeat: "no-repeat"
+          
         }}>
-        <div className="hero-overlay bg-opacity-75 "></div>
+        <div className="hero-overlay bg-opacity-0 "></div>
         <div className="hero-content text-neutral-content text-center pt-24 pb-10 sm:pt-2 sm:pb-2">
           <div className='sm:space-y-20 space-y-12'>
             <h1 className="mb-5 text-4xl  sm:text-6xl  font-bold leading-tight sm:leading-snug">

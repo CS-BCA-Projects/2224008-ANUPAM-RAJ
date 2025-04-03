@@ -41,7 +41,7 @@ const TestimonialSlider = () => {
 
     return (
         <div className="px-4">
-            <div className="px-6 md:px-16 lg:px-32 py-12 bg-yellow-100">
+            <div className="px-6 md:px-16 lg:px-32 py-12 bg-[#ADEBB3]">
                 <h2 className="text-5xl font-bold text-center mb-8 text-black">What Our Buyers Say</h2>
                 <div className="relative max-w-4xl mx-auto">
 
@@ -55,7 +55,7 @@ const TestimonialSlider = () => {
 
                     <Slider ref={sliderRef} {...settings} className="w-full">
                         {testimonials.map((testimonial, index) => (
-                            <div key={index} className="flex flex-col items-center text-center p-8 bg-white shadow-2xl rounded-lg">
+                            <div key={index} className="flex flex-col items-center text-center p-8 bg-[#FFC2BA] to-[#c9fdf2] shadow-2xl rounded-lg">
                                 <img
                                     src={testimonial.image}
                                     alt={testimonial.name}
