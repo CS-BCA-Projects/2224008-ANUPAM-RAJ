@@ -32,16 +32,16 @@ function FAQ() {
 
   return (
     <div className="px-4">
-        <div className="max-w-2xl mx-auto my-10 p-6 bg-yellow-100 rounded-lg shadow-black shadow-lg">
-      <h2 className="text-5xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+        <div className="max-w-xl mx-auto my-10 p-6 bg-yellow-100 rounded-lg shadow-black shadow-lg">
+      <h2 className="text-4xl font-bold text-center mb-6">Frequently Asked Questions</h2>
       {faqs.map((faq, index) => (
         <div key={index} className="mb-4 border-b">
           <button
-            className="w-full text-left p-4 font-semibold flex justify-between items-center"
+            className="w-full text-left p-4 font-semibold flex justify-between items-center text-lg"
             onClick={() => toggleFAQ(index)}
           >
             {faq.question}
-            <span className="text-4xl">{openIndex === index ? "−" : "+"}</span>
+            <span className="text-lg">{openIndex === index ? "−" : "+"}</span>
           </button>
           {openIndex === index && <p className="p-4 bg-gray-100">{faq.answer}</p>}
         </div>

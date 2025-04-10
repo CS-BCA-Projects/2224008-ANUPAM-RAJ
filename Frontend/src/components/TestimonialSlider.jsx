@@ -42,7 +42,7 @@ const TestimonialSlider = () => {
     return (
         <div className="px-4">
             <div className="px-6 md:px-16 lg:px-32 py-12 bg-[#ADEBB3]">
-                <h2 className="text-5xl font-bold text-center mb-8 text-black">What Our Buyers Say</h2>
+                <h2 className="text-3xl font-bold text-center mb-8 text-black">What Our Buyers Say</h2>
                 <div className="relative max-w-4xl mx-auto">
 
                     {/* Left Button */}
@@ -61,8 +61,8 @@ const TestimonialSlider = () => {
                                     alt={testimonial.name}
                                     className="w-24 object-cover md:w-52 rounded-full mb-6 "
                                 />
-                                <p className="text-lg md:text-2xl italic px-4">"{testimonial.review}"</p>
-                                <h3 className="mt-4 font-semibold text-lg md:text-2xl">- {testimonial.name}</h3>
+                                <p className="text-lg sm:text-xl italic px-4">"{testimonial.review}"</p>
+                                <h3 className="mt-4 font-semibold text-lg md:text-xl">- {testimonial.name}</h3>
                             </div>
                         ))}
                     </Slider>

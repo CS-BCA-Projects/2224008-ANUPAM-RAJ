@@ -3,23 +3,23 @@ import React from "react";
 function Footer() {
   return (
     <div className="px-4">
-      <footer className="footer footer-center bg-gradient-to-t from-[#88BDF2]   text-primary-content p-10 ">
+      <footer className="footer footer-center bg-gradient-to-t from-[#88BDF2]   text-primary-content p-6  ">
   <aside>
     
-    <p className="font-bold text-xl text-black">
+    <p className="font-bold text-lg text-black">
       ACME BookMart Ltd.
       <br />
       Bringing stories to life since 1992
     </p>
-    <p className="font-bold text-xl text-black">Copyright © {new Date().getFullYear()} - All right reserved</p>
+    <p className="font-bold text-lg text-black">Copyright © {new Date().getFullYear()} - All right reserved</p>
   </aside>
   <nav>
     <div className="grid grid-flow-col gap-4">
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="35"
+          height="35"
           viewBox="0 0 24 24"
           className="fill-current text-blue-700">
           <path
@@ -29,8 +29,8 @@ function Footer() {
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="35"
+          height="35"
           viewBox="0 0 24 24"
           className="fill-current text-red-600">
           <path
@@ -40,8 +40,8 @@ function Footer() {
       <a>
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="50"
-          height="50"
+          width="35"
+          height="35"
           viewBox="0 0 24 24"
           className="fill-current text-blue-500">
           <path

@@ -2,9 +2,11 @@ import { useEffect, useState } from "react";
 
 function Owner() {
   const [orders, setOrders] = useState([]);
+  const baseUrl = import.meta.env.VITE_BACKEND_URL
+
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/orders")
+    fetch(`${baseUrl}/api/orders`)
       .then((res) => res.json())
       .then((data) => setOrders(data))
       .catch((err) => console.error(err));
