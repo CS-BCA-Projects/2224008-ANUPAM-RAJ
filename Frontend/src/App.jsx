@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Route, Routes } from "react-router-dom";
-import LandingPage from './firstPage/LandingPage';
-import LandingPage2 from './firstPage/LandingPage2';
+import LandingPage from './firstpage/LandingPage';
+import LandingPage2 from './firstpage/LandingPage2';
 import Category from './secondPage/Category';
 import Category2 from './secondPage/Category2';
 import Contact from './ThirdPage/Contact';
